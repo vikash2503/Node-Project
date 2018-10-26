@@ -16,6 +16,12 @@ app.get('/about', (req, res)=>{
 
 })
 
+//Test the Git
+app.get('/', (req, res)=>{
+	res.send(' First Web Node App');
+	
+});
+
 
 app.listen(3000, ()=>{
 	console.log('Server started successsfully on port : 3000');
