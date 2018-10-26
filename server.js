@@ -7,6 +7,9 @@ hbs.registerPartials(__dirname + '/view/partial');
 
 app.set('view engine', 'hbs');
 
+//For Statis folder Access
+app.use(express.static(__dirname + '/html'));
+
 app.get('/about', (req, res)=>{
 
      res.render('about.hbs', {
@@ -26,4 +29,5 @@ app.get('/', (req, res)=>{
 app.listen(3000, ()=>{
 	console.log('Server started successsfully on port : 3000');
 });
+
 
